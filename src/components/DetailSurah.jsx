@@ -1,4 +1,5 @@
 import React from "react";
+import ReactAudioPlayer from "react-audio-player";
 
 const DetailSurah = ({ data }) => {
   return (
@@ -12,6 +13,7 @@ const DetailSurah = ({ data }) => {
 
           <label htmlFor="">Jumlah Ayat : </label>
           <h4>{data.numberOfAyahs}</h4>
+          <ReactAudioPlayer src={data.audio} controls />
           <br />
           <label htmlFor="">Deskripsi Singkat : </label>
           <p>{data.description}</p>

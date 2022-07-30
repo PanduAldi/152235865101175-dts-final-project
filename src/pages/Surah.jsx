@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { LinkContainer } from "react-router-bootstrap";
 import DetailAyatContainer from "../containers/DetailAyatContainer";
 import DetailSurahContainer from "../containers/DetailSurahContainer";
 import PageLayout from "../Layout/PageLayout";
@@ -23,6 +24,20 @@ const Surah = () => {
         <section className="container">
           <div className="row">
             <div className="col-lg-4">
+              <div className="d-grid gap-2">
+                <LinkContainer to="/">
+                  <button
+                    className="btn btn-danger"
+                    style={{
+                      borderBottomRightRadius: 0,
+                      borderBottomLeftRadius: 0,
+                    }}
+                    type="button"
+                  >
+                    Kembali ke Beranda
+                  </button>
+                </LinkContainer>
+              </div>
               <DetailSurahContainer />
             </div>
             <div className="col-lg-8">

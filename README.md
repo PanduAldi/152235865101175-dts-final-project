@@ -1,4 +1,4 @@
-# DTS Final Project
+# DTS Final Project Mengaji Qur'an APPs
 
 Ketentuan lengkap bisa dilihat di [Final Project Guidelines](https://docs.google.com/document/d/1tIJWFEUr2NU8FZSxAA1IPi7ZYVn1jBDp6IdFUZjempg/edit?usp=sharing).
 
