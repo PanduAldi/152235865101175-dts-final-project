@@ -40,7 +40,7 @@ const SurahListContainer = () => {
             surah.map((srh) => {
               return (
                 <>
-                  <div className="col-3" key={srh.nomor}>
+                  <div className="col-lg-3 col-xs-6" key={srh.nomor}>
                     <SurahList data={srh} />
                   </div>
                 </>

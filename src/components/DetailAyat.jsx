@@ -5,7 +5,7 @@ const DetailAyat = ({ data }) => {
 
   return (
     <>
-      <div className="card card-ayat">
+      <div className="card card-ayat mt-4">
         <div className="card-body">
           {data.number !== number && (
             <>
