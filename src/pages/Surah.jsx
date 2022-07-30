@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import DetailAyatContainer from "../containers/DetailAyatContainer";
 import DetailSurahContainer from "../containers/DetailSurahContainer";
 import PageLayout from "../Layout/PageLayout";
 import "./style/PageHero.css";
@@ -24,7 +25,9 @@ const Surah = () => {
             <div className="col-lg-4">
               <DetailSurahContainer />
             </div>
-            <div className="col-lg-8"></div>
+            <div className="col-lg-8">
+              <DetailAyatContainer />
+            </div>
           </div>
         </section>
       </PageLayout>

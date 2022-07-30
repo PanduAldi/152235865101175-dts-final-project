@@ -7,3 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #575c68;
 }
+
+.card-ayat {
+  font-family: adobe arabic;
+  height: 120vh;
+  overflow-y: scroll;
+}
