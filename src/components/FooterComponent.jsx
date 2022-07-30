@@ -8,7 +8,7 @@ const FooterComponent = () => {
           position: "relative",
           bottom: 0,
           width: "100%",
-          height: "3vw",
+          height: "3em",
           padding: 12,
           color: "#fff",
           fontFamily: "sans-serif",
