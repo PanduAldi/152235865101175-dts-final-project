@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import PageLayout from "../Layout/PageLayout";
 import "./style/PageHero.css";
 
 const Tentang = () => {
-  const [title] = useState("Tentang Mengaji Qur`an");
+  const title = "Tentang Mengaji Qur`an";
 
   useEffect(() => {
     document.title = title;

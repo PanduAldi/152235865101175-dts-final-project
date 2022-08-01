@@ -5,4 +5,6 @@ const SholatApi = axios.create({
   baseURL: "https://api.myquran.com/v1/sholat",
 });
 
+//?query=brebes1406
+
 export default SholatApi;

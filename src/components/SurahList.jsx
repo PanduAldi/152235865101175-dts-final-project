@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 
 const SurahList = ({ data }) => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import DetailAyatContainer from "../containers/DetailAyatContainer";
 import DetailSurahContainer from "../containers/DetailSurahContainer";
@@ -6,7 +6,7 @@ import PageLayout from "../Layout/PageLayout";
 import "./style/PageHero.css";
 
 const Surah = () => {
-  const [title] = useState("Detail Surah");
+  const title = "Detail Surah";
 
   useEffect(() => {
     document.title = title;

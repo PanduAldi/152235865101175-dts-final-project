@@ -1,37 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import PageLayout from "../Layout/PageLayout";
 import "./style/HeroStyle.css";
 import logo from "../quranBG.svg";
-import SholatApi from "../apis/SholatApi";
 import SurahListContainer from "../containers/SurahListContainer";
 
 const Home = () => {
-  const [title] = useState("Beranda");
-  const tgl = new Date();
-  const [sholats, setSholats] = useState([]);
-  const jadwalList = ["subuh", "dhuha", "dzuhur", "ashar", "maghrib", "isya"];
+  const title = "Beranda";
 
   useEffect(() => {
     document.title = title;
   }, [title]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await SholatApi.get(
-          `/jadwal/1406/${tgl.getFullYear()}/${
-            tgl.getMonth() + 1
-          }/${tgl.getDate()}`
-        );
-
-        setSholats(response.data.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <>

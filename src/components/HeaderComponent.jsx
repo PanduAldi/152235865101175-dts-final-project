@@ -2,6 +2,12 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import {
+  AiOutlineLogin,
+  AiOutlineHome,
+  AiOutlineInfoCircle,
+  AiOutlineCalendar,
+} from "react-icons/ai";
 
 import { LinkContainer } from "react-router-bootstrap";
 import Logo from "../logo.svg";
@@ -27,17 +33,28 @@ const HeaderComponent = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <LinkContainer to="/">
-                <Nav.Link>Beranda</Nav.Link>
+                <Nav.Link>
+                  {" "}
+                  <AiOutlineHome /> Beranda
+                </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/jadwal-sholat">
-                <Nav.Link>Jadwal Sholat</Nav.Link>
+                <Nav.Link>
+                  {" "}
+                  <AiOutlineCalendar /> Jadwal Sholat
+                </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/tentang">
-                <Nav.Link>Tentang</Nav.Link>
+                <Nav.Link>
+                  {" "}
+                  <AiOutlineInfoCircle /> Tentang
+                </Nav.Link>
               </LinkContainer>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">🔐 Login</Nav.Link>
+              <Nav.Link href="#deets">
+                <AiOutlineLogin /> Login
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
