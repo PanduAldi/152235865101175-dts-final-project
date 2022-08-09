@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SholatApi from "../apis/SholatApi";
 import SholatTable from "../components/SholatTable";
-import addNotification from "react-push-notification";
 
 const months = [
   "Januari",
@@ -116,20 +115,6 @@ const SholatContainer = () => {
                   );
                 })}
               </select>
-              <button
-                onClick={() => {
-                  addNotification({
-                    title: "tes",
-                    subtitle: "Tes notifikasi",
-                    messagge: "Ini adalah contoh tes notifikasi dengan reactjs",
-                    theme: "darkblue",
-                    native: true,
-                  });
-                }}
-                className="btn btn-primary"
-              >
-                Tes +Notif
-              </button>
             </div>
           </div>
 
